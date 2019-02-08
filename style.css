@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    font-family: 'Libre Baskerville', serif; 
+}
+
+#main{
+    display: grid;
+    grid-template-areas: 'header header header header'
+                        'nav nav nav nav'
+                        'section section aside aside'
+                        'footer footer footer footer';
+    grid-template-rows: 300px 50px 700px 100px;
+}
+
+header{
+    grid-area: header;
+    background-color: DeepSkyBlue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header img{
+    width: 10%;
+    border-radius: 150px;
+    align-self: flex-start;
+    
+}
+
+nav{
+    grid-area: nav;
+    background-color: LightSkyBlue;
+}
+
+section{
+    grid-area: section;
+    background-color: LightSteelBlue;
+}
+
+aside{
+    grid-area: aside;
+    background-color: SlateGray;
+}
+
+footer{
+    grid-area: footer;
+    background-color: lightslategray;
+}
